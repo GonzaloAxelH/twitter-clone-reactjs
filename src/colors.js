@@ -1,0 +1,22 @@
+const colores  = {
+  azul1:'#1D9BF0',
+  azul1Hover:'#1A8CD8',
+  twitterHover:'#F7F7F7',
+  colorTitle1:'#0F1419',
+  colorDescTwitter:'#0F1419',
+  colorHoverBlack:'#CFD0D1',
+  colorBorder1:'#EFF3F4',
+  colorBorder2Image:'#CFD9DE',
+  colorLink1:'#1D9BF0',
+  colorDatetwitter:'#536471',
+  colorGreenRetweet:'#00BA7C',
+  colorGreenRetweetHover:'#CCF1E5',
+  colorIcon:'#536471',
+  colorBtnDesactive:'#8ECDF7',
+  colorRedCorazon:'#F91880',
+  colorRedCorazonHover:'#F8CAE0',
+  colorBackgroundSearch:'#EFF3F4',
+  bacgroudBtnfollow:'#0F1419',
+  colorBacgroundTrends:'#F7F9F9',
+  colorBacgroundTrendsHover:'#EFF1F1'
+}
