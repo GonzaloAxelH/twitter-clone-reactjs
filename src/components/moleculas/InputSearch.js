@@ -1,7 +1,7 @@
 import IconSearch2 from "../atomos/Icons/IconSearch2";
 import styled from "styled-components";
 import IconEquis from "../atomos/Icons/IconEquis";
-const InputSearchContent = styled.div`
+const InputSearchContent = styled.form`
   border:1px solid transparent;
   &:hover{
     background:#fff;

@@ -8,7 +8,9 @@ const User = styled.div`
   transition: 0.2s all;
   border-radius: 100px;
   cursor: pointer;
+  align-items: center;
   padding: 12px;
+  margin:0.5em 0;
   &:hover {
     background: #eff1f1;
   }
@@ -52,9 +54,7 @@ const User = styled.div`
   }
 
   @media (max-width: 1296px) {
-    width: auto;
-    grid-template-columns: 50px;
-
+    grid-template-columns: 40px;
     div:nth-child(2) {
       display: none;
     }

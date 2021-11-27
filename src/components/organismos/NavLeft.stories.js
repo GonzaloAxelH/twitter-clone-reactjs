@@ -9,6 +9,6 @@ const Template = (args) => <NavLeft {...args} />;
 export const Item = Template.bind({});
 
 Item.args = {
-
+  
 };
 

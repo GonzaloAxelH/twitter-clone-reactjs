@@ -2,23 +2,21 @@ import styled from "styled-components";
 const Button = styled.a`
   div {
     position: relative;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     background: transparent;
     transition: 0.2s all;
-    width: 50px;
-    height: 50px;
-    border-radius:50%;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
   }
   div:hover {
     background: #e8f5fe;
   }
   svg {
     position: absolute;
-    width: 50px;
-    fill:#1D9BF0;
-    height: 30px;
+    fill: #1d9bf0;
   }
 `;
 const ButtonImg = ({ Icon }) => {

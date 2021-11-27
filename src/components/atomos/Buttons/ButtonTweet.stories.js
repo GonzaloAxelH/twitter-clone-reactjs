@@ -8,9 +8,14 @@ export default {
 const Template = (args) => <ButtonTweet {...args} />;
 
 export const Primary = Template.bind({});
+export const Secondary = Template.bind({});
 
 Primary.args = {
-  backgroundColor: "#1D9BF0",
-  size: "largue",
   label: "Button",
+  type:"primary"
+};
+
+Secondary.args = {
+  label: "Button",
+  type:"secondary"
 };

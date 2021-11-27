@@ -1,7 +1,7 @@
 
 const ImgUser = ({url}) => {
   return (
-    <img src={url} />
+    <img src={url} alt="" />
   )
 }
 

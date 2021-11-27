@@ -1,12 +1,11 @@
 import styled from "styled-components";
-import IconHome from "../atomos/Icons/IconHome";
 const Item = styled.a`
   font-family:sans-serif;
-  width: auto;
   text-decoration: none;
   display: flex;
   align-items: center;
   transition: 0.2s all;
+  min-width:234px;
   height: 50.25px;
   svg {
     width: 26.25px;
@@ -35,7 +34,7 @@ const Item = styled.a`
   @media (max-width: 1296px) {
     display: flex;
     transition: 0.2s all;
-    width: 50.25px;
+    min-width: 50.25px;
     height: 50.25px;
     border-radius: 50%;
     div {

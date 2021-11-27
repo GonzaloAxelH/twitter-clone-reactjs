@@ -4,6 +4,7 @@ import IconTweet from "../Icons/IconTweet";
 import styled from "styled-components";
 const Btn = styled.a`
   display: block;
+  width: 100%;
   box-sizing: border-box;
   font-family: sans-serif;
   padding: 0 32px;
@@ -19,7 +20,7 @@ const Btn = styled.a`
     justify-content: center;
     align-items: center;
     background: #1d9bf0;
-    height: 50px;
+    height: 52px;
   }
   svg {
     position: absolute;
@@ -32,9 +33,9 @@ const Btn = styled.a`
     color: #fff;
     font-weight: bold;
   }
-  @media (max-width: 1296px){
-    width: 50px;
-    height: 50px;
+  @media (max-width: ${(props)=> props.type == "primary" ? "1296px":"0" }){
+    width: 52px;
+    height: 51px;
     padding: 0;
     div {
       border-radius: 50%;
@@ -48,9 +49,9 @@ const Btn = styled.a`
   }
 `;
 
-const Button = ({label}) => {
+const Button = ({label,type}) => {
   return (
-    <Btn href="#">
+    <Btn  type={type}  href="#">
       <div>
         <IconTweet />
         <span>{label}</span>
