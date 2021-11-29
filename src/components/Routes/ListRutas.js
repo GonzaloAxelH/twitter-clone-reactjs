@@ -1,15 +1,14 @@
-
 import Home from '../pages/Home'
 
 export const ListRutas = {
   Home: {
-    path: "/",
+    path: '/',
     exact: true,
-    Component:()=> <Home />,
+    Component: () => <Home />
   },
   Notifications: {
-    path: "/notifcations",
+    path: '/notifcations',
     exact: false,
-    Component: () => <h1>Notificacions</h1>,
-  },
-};
+    Component: () => <h1>Notificacions</h1>
+  }
+}

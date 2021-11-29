@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 const Btn = styled.a`
   text-align: center;
   display: block;
@@ -32,7 +32,7 @@ const Btn = styled.a`
     font-weight: bold;
     text-align: center;
   }
-`;
+`
 
 const Button = ({ label }) => {
   return (
@@ -41,6 +41,6 @@ const Button = ({ label }) => {
         <span>{label}</span>
       </div>
     </Btn>
-  );
-};
-export default Button;
+  )
+}
+export default Button

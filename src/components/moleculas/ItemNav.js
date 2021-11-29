@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 const Item = styled.a`
   font-family:sans-serif;
   text-decoration: none;
@@ -11,13 +11,13 @@ const Item = styled.a`
     width: 26.25px;
   }
   svg:nth-child(1){
-    display:${(props)=> props.active ? "flex":"none"};
+    display:${(props) => (props.active ? 'flex' : 'none')};
   }
   svg:nth-child(2){
-    display:${(props)=> props.active ? "none":"flex"};
+    display:${(props) => (props.active ? 'none' : 'flex')};
   }
   span {
-    font-weight: ${(props) => (props.active ? "bold" : "300")};
+    font-weight: ${(props) => (props.active ? 'bold' : '300')};
     color: #000;
     padding:0 1em ;
   }
@@ -56,7 +56,7 @@ const Item = styled.a`
       display:none;  
       font-size:20px;
     }
-`;
+`
 const ItemNav = ({ Icon, text, active, onClick }) => {
   return (
     <Item href="#" active={active} onClick={onClick}>
@@ -64,12 +64,12 @@ const ItemNav = ({ Icon, text, active, onClick }) => {
         <Icon />
         <span>{text}</span>
       </div>
-    </Item> 
-  );
-};
+    </Item>
+  )
+}
 
-ItemNav.propTypes = {};
+ItemNav.propTypes = {}
 
-ItemNav.defaultProps = {};
+ItemNav.defaultProps = {}
 
-export default ItemNav;
+export default ItemNav

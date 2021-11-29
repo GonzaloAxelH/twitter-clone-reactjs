@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 export default function IconCIrcle() {
   return (
@@ -12,7 +12,7 @@ export default function IconCIrcle() {
         cx="50%"
         cy="50%"
         fill="none"
-        stroke-width="2"
+        strokeWidth="2"
         r="9"
         stroke="#EFF3F4"
       ></circle>
@@ -20,12 +20,12 @@ export default function IconCIrcle() {
         cx="50%"
         cy="50%"
         fill="none"
-        stroke-width="2"
+        strokeWidth="2"
         r="9"
         stroke="#1D9BF0"
-        stroke-linecap="round"
+        strokeLinecap="round"
         style="stroke-dashoffset: 49.2781; stroke-dasharray: 56.5487;"
       ></circle>
     </svg>
-  );
+  )
 }

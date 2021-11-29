@@ -1,14 +1,14 @@
-import ButtonImg from "./ButtonImg";
-import IconBird from "../Icons/IconBird";
+import ButtonImg from './ButtonImg'
+import IconBird from '../Icons/IconBird'
 export default {
-  title: "Components/ButtonImg",
-  component: ButtonImg,
-};
+  title: 'Components/ButtonImg',
+  component: ButtonImg
+}
 
-const Template = (args) => <ButtonImg {...args} />;
+const Template = (args) => <ButtonImg {...args} />
 
-export const Primary = Template.bind({});
+export const Primary = Template.bind({})
 
 Primary.args = {
-  Icon:()=> <IconBird />
-};
+  Icon: () => <IconBird />
+}

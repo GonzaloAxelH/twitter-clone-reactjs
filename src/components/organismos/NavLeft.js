@@ -1,17 +1,18 @@
-import styled from "styled-components";
-import IconHome from "../atomos/Icons/IconHome";
-import IconList from "../atomos/Icons/IconList";
-import IconMore from "../atomos/Icons/IconMore";
-import IconSearch from "../atomos/Icons/IconSearch";
-import IconCampana from "../atomos/Icons/IconCampana";
-import IconMessage from "../atomos/Icons/IconMessage";
-import IconBird from "../atomos/Icons/IconBird";
-import IconProfile from "../atomos/Icons/IconProfile";
-import ItemNav from "../moleculas/ItemNav";
-import ButtonImg from "../atomos/Buttons/ButtonImg";
-import ButtonTweet from "../atomos/Buttons/ButtonTweet";
+import styled from 'styled-components'
+import IconHome from '../atomos/Icons/IconHome'
+import IconList from '../atomos/Icons/IconList'
+import IconMore from '../atomos/Icons/IconMore'
+import IconSearch from '../atomos/Icons/IconSearch'
+import IconCampana from '../atomos/Icons/IconCampana'
+import IconMessage from '../atomos/Icons/IconMessage'
+import IconBird from '../atomos/Icons/IconBird'
+import IconProfile from '../atomos/Icons/IconProfile'
+import ItemNav from '../moleculas/ItemNav'
+import ButtonImg from '../atomos/Buttons/ButtonImg'
+import ButtonTweet from '../atomos/Buttons/ButtonTweet'
 
-import { useState } from "react";
+import { useState } from 'react'
+
 const Nav = styled.nav`
   display: flex;
   flex-direction: column;
@@ -37,14 +38,14 @@ const Nav = styled.nav`
   @media (max-width: 600px) {
     padding-right: 0;
   }
-`;
+`
 
 const NavLeft = () => {
-  const [select, setSelect] = useState(0);
+  const [select, setSelect] = useState(0)
   return (
     <Nav>
       <div>
-        <div class="btn-bird">
+        <div className="btn-bird">
           <ButtonImg width="50px" height="50px" Icon={() => <IconBird />} />
         </div>
         <ItemNav
@@ -90,7 +91,7 @@ const NavLeft = () => {
         <ButtonTweet type="primary" label="Tweet" />
       </div>
     </Nav>
-  );
-};
+  )
+}
 
-export default NavLeft;
+export default NavLeft

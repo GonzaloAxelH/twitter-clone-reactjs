@@ -1,6 +1,6 @@
-import ImgUser from "../atomos/Img/ImgUser";
-import styled from "styled-components";
-import IconPoints from "../atomos/Icons/IconPoints";
+import ImgUser from '../atomos/Img/ImgUser'
+import styled from 'styled-components'
+import IconPoints from '../atomos/Icons/IconPoints'
 const User = styled.div`
   display: grid;
   grid-template-columns: 40px 153.25px auto;
@@ -10,7 +10,7 @@ const User = styled.div`
   cursor: pointer;
   align-items: center;
   padding: 12px;
-  margin:0.5em 0;
+  margin: 0.5em 0;
   &:hover {
     background: #eff1f1;
   }
@@ -63,7 +63,7 @@ const User = styled.div`
       display: none;
     }
   }
-`;
+`
 
 const ItemUser = () => {
   return (
@@ -79,7 +79,7 @@ const ItemUser = () => {
         <IconPoints />
       </div>
     </User>
-  );
-};
+  )
+}
 
-export default ItemUser;
+export default ItemUser

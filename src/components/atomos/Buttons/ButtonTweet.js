@@ -1,7 +1,6 @@
+import IconTweet from '../Icons/IconTweet'
 
-import IconTweet from "../Icons/IconTweet";
-
-import styled from "styled-components";
+import styled from 'styled-components'
 const Btn = styled.a`
   display: block;
   width: 100%;
@@ -10,12 +9,12 @@ const Btn = styled.a`
   padding: 0 32px;
   text-decoration: none;
   transition: all 0.2s;
-  background:rgb(29,155,240); 
-  &:hover{  
-      background:rgb(26,140,216);
-      div{
-        background:rgb(26,140,216);
-      }
+  background: rgb(29, 155, 240);
+  &:hover {
+    background: rgb(26, 140, 216);
+    div {
+      background: rgb(26, 140, 216);
+    }
   }
   border: none;
   border-radius: 50px;
@@ -42,7 +41,8 @@ const Btn = styled.a`
     color: #fff;
     font-weight: bold;
   }
-  @media (max-width: ${(props)=> props.type == "primary" ? "1296px":"0" }){
+  @media (max-width: ${(props) =>
+      props.type === 'primary' ? '1296px' : '0'}) {
     width: 52px;
     height: 51px;
     padding: 0;
@@ -56,16 +56,16 @@ const Btn = styled.a`
       display: none;
     }
   }
-`;
+`
 
-const Button = ({label,type}) => {
+const Button = ({ label, type }) => {
   return (
-    <Btn  type={type}  href="#">
+    <Btn type={type} href="#">
       <div>
         <IconTweet />
         <span>{label}</span>
       </div>
     </Btn>
-  );
-};
-export default Button;
+  )
+}
+export default Button

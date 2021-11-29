@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import IconStars from "../../atomos/Icons/IconStars";
-import ButtonImg from "../../atomos/Buttons/ButtonImg";
+import styled from 'styled-components'
+import IconStars from '../../atomos/Icons/IconStars'
+import ButtonImg from '../../atomos/Buttons/ButtonImg'
 
 const HeadTweets = styled.div`
   width: 100%;
@@ -13,12 +13,11 @@ const HeadTweets = styled.div`
     margin-left: 0.5em;
     font-size: 20px;
   }
-  svg{
-    width:20px;
-    height:20px;
+  svg {
+    width: 20px;
+    height: 20px;
   }
-
-`;
+`
 
 const TweetsContainer = styled.div`
   flex: 5;
@@ -26,19 +25,17 @@ const TweetsContainer = styled.div`
   border-right: 1px solid #eff3f4;
   max-height: 100vh;
 
-  @media (max-width: 1020px){  
-    max-width:600px;
+  @media (max-width: 1020px) {
+    max-width: 600px;
   }
-`;
-//heads
-
+`
 const ListTweets = styled.div`
   overflow-y: auto;
   height: calc(100vh - 52px);
   &::-webkit-scrollbar {
     display: none;
   }
-`;
+`
 
 const Tweets = () => {
   return (
@@ -49,6 +46,6 @@ const Tweets = () => {
       </HeadTweets>
       <ListTweets></ListTweets>
     </TweetsContainer>
-  );
-};
-export default Tweets;
+  )
+}
+export default Tweets

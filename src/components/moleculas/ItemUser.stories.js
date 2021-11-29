@@ -1,14 +1,11 @@
-import ItemUser from "./ItemUser";
+import ItemUser from './ItemUser'
 export default {
-  title: "Components/Itemuser",
-  component: ItemUser,
-};
+  title: 'Components/Itemuser',
+  component: ItemUser
+}
 
-const Template = (args) => <ItemUser {...args} />;
+const Template = (args) => <ItemUser {...args} />
 
-export const Item = Template.bind({});
+export const Item = Template.bind({})
 
-
-Item.args = {
-};
-
+Item.args = {}

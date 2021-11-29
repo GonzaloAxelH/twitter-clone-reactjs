@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import InputSearch  from '../../moleculas/InputSearch'
+import styled from 'styled-components'
+import InputSearch from '../../moleculas/InputSearch'
 const Aside = styled.div`
   flex: 3;
   border-left: 1px solid #eff3f4;
@@ -7,19 +7,19 @@ const Aside = styled.div`
   @media (max-width: 1020px) {
     display: none;
   }
-`;
-//heads
+`
+// heads
 
 const HeadAside = styled.div`
   width: 100%;
   height: 52px;
-  display:flex;
-  align-items:center;
-  form{
-    margin:0 0 0 .7em;
-    width:80%;
+  display: flex;
+  align-items: center;
+  form {
+    margin: 0 0 0 0.7em;
+    width: 80%;
   }
-`;
+`
 
 const AsideContent = styled.div`
   overflow-y: auto;
@@ -27,7 +27,7 @@ const AsideContent = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
-`;
+`
 
 const Asside = () => {
   return (
@@ -37,7 +37,7 @@ const Asside = () => {
       </HeadAside>
       <AsideContent></AsideContent>
     </Aside>
-  );
-};
+  )
+}
 
-export default Asside;
+export default Asside

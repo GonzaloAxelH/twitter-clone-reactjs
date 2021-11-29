@@ -1,14 +1,14 @@
-import Button from "./Button";
+import Button from './Button'
 
 export default {
-  title: "Components/Button",
-  component: Button,
-};
+  title: 'Components/Button',
+  component: Button
+}
 
-const Template = (args) => <Button {...args} />;
+const Template = (args) => <Button {...args} />
 
-export const Primary = Template.bind({});
+export const Primary = Template.bind({})
 
 Primary.args = {
-  label:"Start a conversation"
-};
+  label: 'Start a conversation'
+}
