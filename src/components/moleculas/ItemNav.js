@@ -64,7 +64,7 @@ const ItemNav = ({ Icon, text, active, onClick }) => {
         <Icon />
         <span>{text}</span>
       </div>
-    </Item>
+    </Item> 
   );
 };
 

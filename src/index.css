@@ -1,18 +1,32 @@
+@font-face {
+  font-family: "Twitter Chirp Medium", sans-serif;
+  src: url("./assets/fonts/Twitter/chirp-medium-web.woff");
+}
+
+@font-face {
+  font-family: "Twitter Chirp Bold", sans-serif;
+  src: url("./assets/fonts/Twitter/chirp-bold-web.woff");
+}
+
+@font-face {
+  font-family: "Twitter Chirp Regular", sans-serif;
+  src: url("./assets/fonts/Twitter/chirp-regular-web.woff");
+}
+
+@font-face {
+  font-family: "Twitter Chirp Heavy";
+  src: url("./assets/fonts/Twitter/chirp-heavy-web.woff");
+}
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:"Twitter Chirp Heavy",sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 *{
-
     box-sizing:border-box;
 }
 

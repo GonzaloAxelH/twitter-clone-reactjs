@@ -9,11 +9,19 @@ const Btn = styled.a`
   font-family: sans-serif;
   padding: 0 32px;
   text-decoration: none;
-  background:#1d9bf0;
+  transition: all 0.2s;
+  background:rgb(29,155,240); 
+  &:hover{  
+      background:rgb(26,140,216);
+      div{
+        background:rgb(26,140,216);
+      }
+  }
   border: none;
   border-radius: 50px;
   cursor: pointer;
   z-index: 1;
+  box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
   div {
     position: relative;
     display: flex;
@@ -21,6 +29,7 @@ const Btn = styled.a`
     align-items: center;
     background: #1d9bf0;
     height: 52px;
+    transition: all 0.2s;
   }
   svg {
     position: absolute;

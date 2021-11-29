@@ -13,29 +13,29 @@ import ButtonTweet from "../atomos/Buttons/ButtonTweet";
 
 import { useState } from "react";
 const Nav = styled.nav`
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  .btn-tweet,
+  justify-content: center;
+
+  .btn-tweet {
+    width: 100%;
+    margin-top: 10px;
+  }
   .btn-bird {
-    width: 90%;
-    align-self: flex-start;
-    margin: 0.6em 0;
+    width: 50px;
+    height: 50px;
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  @media (min-width: 1020px) {
+    padding-right: 24px;
   }
 
-  .btn-bird svg{
-    width:30px;
-  }
-
-
-  @media (max-width: 1020px){
-    padding-right:12px;
-  }
-
-  @media (max-width: 600px){
-    padding-right:0;
+  @media (max-width: 600px) {
+    padding-right: 0;
   }
 `;
 
@@ -43,11 +43,10 @@ const NavLeft = () => {
   const [select, setSelect] = useState(0);
   return (
     <Nav>
-      <div className="btn-bird">
-        <ButtonImg Icon={() => <IconBird />} />
-      </div>
-
       <div>
+        <div class="btn-bird">
+          <ButtonImg width="50px" height="50px" Icon={() => <IconBird />} />
+        </div>
         <ItemNav
           onClick={() => setSelect(0)}
           Icon={() => <IconHome />}

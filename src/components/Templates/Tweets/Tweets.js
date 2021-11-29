@@ -45,7 +45,7 @@ const Tweets = () => {
     <TweetsContainer>
       <HeadTweets>
         <h1>Home</h1>
-        <ButtonImg Icon={() => <IconStars />} />
+        <ButtonImg width="40px" height="40px" Icon={() => <IconStars />} />
       </HeadTweets>
       <ListTweets></ListTweets>
     </TweetsContainer>

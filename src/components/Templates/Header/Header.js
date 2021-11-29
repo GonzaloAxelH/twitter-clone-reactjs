@@ -1,6 +1,7 @@
 import NavLeft from "../../organismos/NavLeft";
 import styled from "styled-components";
 import ItemUser from "../../moleculas/ItemUser";
+
 const Header = styled.header`
   flex:3;
   display: flex;
@@ -17,18 +18,27 @@ const Header = styled.header`
     flex:1;
     min-width:70px;
   }
-
-  @media (max-width: 1020px){
-    flex:2;
+  @media (min-width: 1020px){
     align-items:flex-end;
-
+     
+    .item-user{
+      padding-right:18px;
+    }
+  }
+  @media (max-width: 1020px){
+    flex:2;   
   }
 
   @media (max-width: 600px){
     flex:1;
-    
     align-items:center;
   }
+  .item-user{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+   }
 `;
 
 const ContentNav = styled.div`
@@ -43,7 +53,9 @@ const Head = () => {
       <ContentNav>
         <NavLeft />
       </ContentNav>
-      <ItemUser />
+      <div class="item-user">
+         <ItemUser />  
+       </div> 
     </Header>
   );
 };
