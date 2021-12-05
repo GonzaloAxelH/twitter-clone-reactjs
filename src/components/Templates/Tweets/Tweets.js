@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import IconStars from '../../atomos/Icons/IconStars'
 import ButtonImg from '../../atomos/Buttons/ButtonImg'
-
+import FormTweet from '../../organismos/FormTweet'
 const HeadTweets = styled.div`
   width: 100%;
   height: 52px;
@@ -44,7 +44,10 @@ const Tweets = () => {
         <h1>Home</h1>
         <ButtonImg width="40px" height="40px" Icon={() => <IconStars />} />
       </HeadTweets>
-      <ListTweets></ListTweets>
+
+      <ListTweets>
+      <FormTweet />
+      </ListTweets>
     </TweetsContainer>
   )
 }

@@ -58,9 +58,9 @@ const Btn = styled.a`
   }
 `
 
-const Button = ({ label, type }) => {
+const Button = ({ label, type, ...args }) => {
   return (
-    <Btn type={type} href="#">
+    <Btn type={type} href="#" >
       <div>
         <IconTweet />
         <span>{label}</span>
