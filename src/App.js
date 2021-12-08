@@ -7,6 +7,9 @@ const AppContainer = styled.div`
   height: 100vh;
   display: flex;
 `
+if (!localStorage.getItem('tweets')) {
+  localStorage.setItem('tweets', JSON.stringify([]))
+}
 
 function App() {
   return (

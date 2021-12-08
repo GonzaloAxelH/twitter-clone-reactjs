@@ -20,11 +20,12 @@
 
 body {
   margin: 0;
-  font-family: 'Twitter Chirp Heavy', sans-serif;
+  font-family: 'Twitter Chirp Medium', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 * {
   box-sizing: border-box;
+
 }

@@ -2,7 +2,7 @@ const IconMore = () => {
   return (
     <>
       <svg></svg>
-      <svg viewBox="0 0 24 24" ariaHidden="true">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
         <g>
           <circle cx="17" cy="12" r="1.5"></circle>
           <circle cx="12" cy="12" r="1.5"></circle>

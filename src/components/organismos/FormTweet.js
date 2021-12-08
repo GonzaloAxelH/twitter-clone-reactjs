@@ -160,25 +160,39 @@ const CircleCount = ({ value, color }) => {
     return roundDraw
   }
   return (<ContainerCircle value={calcPercent(value)}>
-          <svg viewbox="0 0 100 100" height="27" width="27">
+          <svg viewBox="0 0 100 100" height="27" width="27">
             <circle cx="12" className="circle" cy="13" r="11" stroke={color} fill="transparent" />
-          s</svg>
+          </svg>
           </ContainerCircle>
   )
 }
+
 const FormTweet = () => {
-  const [valueInput, setValueInput] = useState({ value: '', count: 0 })
+  const [valueInput, setValueInput] = useState({ value: '', count: 0, porcentaje: 0 })
   const [disableForm, setDisableForm] = useState(false)
+  const [countMax] = useState(1000)
   const onSubmit = (e) => {
     e.preventDefault()
     console.log(valueInput)
+    const newTweet = {
+      description: valueInput.value
+    }
+    save(newTweet)
   }
 
+  const save = (item) => {
+    if (localStorage.getItem('tweets')) {
+      const tweets = JSON.parse(localStorage.getItem('tweets'))
+      tweets.push(item)
+      localStorage.setItem('tweets', JSON.stringify(tweets))
+    }
+    setValueInput({ value: '', count: 0 })
+  }
   const onGetValue = (value, count) => {
-    setValueInput({ value, count })
+    const porcentaje = count * 100 / countMax
+    setValueInput({ value, count, porcentaje })
     console.log(valueInput)
-
-    if (count >= 99) {
+    if (count >= countMax) {
       setDisableForm(true)
     } else {
       setDisableForm(false)
@@ -223,7 +237,7 @@ const FormTweet = () => {
         </LoadMethods>
 
         <FromSend>
-          <CircleCount color={disableForm ? 'red' : '#1d9bf0'} value={valueInput.count} />
+          <CircleCount color={disableForm ? 'red' : '#1d9bf0'} value={valueInput.porcentaje} />
           <div className="container__button-plus">
               <IconPlus />
           </div>

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import InputSearch from '../../moleculas/InputSearch'
 const Aside = styled.div`
-  flex: 3;
+  flex: 3.7;
   border-left: 1px solid #eff3f4;
   max-height: 100vh;
   @media (max-width: 1020px) {
