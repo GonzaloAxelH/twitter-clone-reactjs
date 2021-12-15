@@ -1,5 +1,9 @@
-# Twitter Clone React 
-![Alt text](/preview.png?raw=true "Title")
+# Twitter Clone React
+
+![Alt text](/captura2.png?raw=true 'Title')
+
+![Alt text](/captura1.png?raw=true 'Title2')
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
